@@ -1,0 +1,2 @@
+- quiero saber como se hace peticion solo de X páginas que yo elija y no todas.
+  -quiero cambiar los colores de fondo de mi background mediante props para que cuando pinche en movie me cambie de color

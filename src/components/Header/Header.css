@@ -1,0 +1,38 @@
+.headerContainer {
+  display: flex;
+  flex-direction: column; /* Cambia el flujo del diseño a columnas */
+  align-items: center; /* Centra horizontalmente los elementos */
+  justify-content: center; /* Centra verticalmente los elementos */
+  text-align: center; /* Centra horizontalmente el texto */
+}
+
+.contentWrapper {
+  display: flex; /* Usa flexbox para alinear los elementos */
+  align-items: center; /* Centra verticalmente los elementos */
+  justify-content: center; /* Centra horizontalmente los elementos */
+}
+
+.filmIcon {
+  width: 100px; /* Tamaño de la imagen */
+  margin-left: 10px; /* Margen izquierdo para separar la imagen del texto */
+}
+
+.marquee {
+  font-size: 3em; /* Tamaño de la fuente */
+  animation: marquee 2s infinite; /* Animación del texto */
+  text-shadow: 2px 2px 4px #ebd1d1; /* Sombra del texto */
+  margin-top: 10px; /* Margen superior */
+  color: var(--color-1); /* Color del texto */
+}
+
+@keyframes marquee {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
