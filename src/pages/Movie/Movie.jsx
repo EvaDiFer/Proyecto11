@@ -1,6 +1,6 @@
 import { useParams } from 'react-router-dom';
 import './Movie.css';
-import apiKey from '../../utils/config';
+
 import { useEffect, useState } from 'react';
 import { getImageUrl } from '../../utils/utils';
 
@@ -10,7 +10,11 @@ const Movie = () => {
   const [showFullOverview, setShowFullOverview] = useState(false);
 
   useEffect(() => {
-    fetch(`https://api.themoviedb.org/3/movie/${id}?api_key=${apiKey}`)
+    fetch(
+      `https://api.themoviedb.org/3/movie/${id}?api_key=${
+        import.meta.env.VITE_API_KEY
+      }`
+    )
       .then((res) => res.json())
       .then((res) => setMovie(res));
   }, []);
