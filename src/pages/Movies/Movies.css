@@ -11,6 +11,11 @@
   border-bottom: 1px solid #ccc;
 }
 
+#movies img {
+  max-width: 100%;
+  height: auto;
+}
+
 #movies::-webkit-scrollbar {
   width: 10px;
 }

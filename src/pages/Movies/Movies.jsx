@@ -10,7 +10,7 @@ const Movies = () => {
   const [page, setPage] = useState(1);
 
   useEffect(() => {
-    console.log(import.meta.env.VITE_API_KEY); // Aquí se imprime la API key en la consola
+    console.log(import.meta.env.VITE_API_KEY);
     const fetchMovies = async () => {
       setLoading(true);
       try {
